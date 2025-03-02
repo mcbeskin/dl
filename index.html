@@ -341,10 +341,7 @@
 <i class="fas fa-globe"></i>
       All
     </div>
-
-
-
-<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-cube"></i> Pack</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fab fa-android"></i> Apk</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-user"></i> Persona</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-cube"></i> Pack</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-user"></i> Persona</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fab fa-android"></i> Apk</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
 <i class="fas fa-shopping-cart"></i>
       Marketplace
     </div>
@@ -538,16 +535,6 @@
 <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
 <i class="fas fa-arrow-left"></i> Back
     </button>
-</div><div class="hidden-section" id="windowsSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fab fa-android"></i>
-<br/>
-      Apk
-    </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button>
 </div><div class="hidden-section" id="androidSection">
 <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
 <i class="fas fa-user"></i>
@@ -555,13 +542,15 @@
       Persona
     </header>
 <input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-<div class="section">
-<div class="section-title">Example Item</div>
-<a class="download-badge" href="http://example.com" target="_blank">
-<i class="fas fa-download"></i> Download
-  </a>
-<img alt="Example Item" class="preview-image" loading="lazy" src="http://example.com/image.jpg"/>
-</div>
+<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+<i class="fas fa-arrow-left"></i> Back
+    </button></div><div class="hidden-section" id="windowsSection">
+<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+<i class="fab fa-android"></i>
+<br/>
+      Apk
+    </header>
+<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
 <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
 <i class="fas fa-arrow-left"></i> Back
     </button>
