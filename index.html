@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Skins</title>
-<style>
-    :root {
-      --primary-color: #007BFF; /* Used for other elements like borders */
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Skins
+  </title>
+  <style>
+   :root {
+      --primary-color: #007BFF;
       --secondary-color: #0056b3;
       --accent-color: #1E90FF;
       --background-dark: #0F0F1E;
@@ -59,7 +60,6 @@
       color: var(--text-light);
       line-height: 1.6;
     }
-    /* Additional background style if bg folder images exist will be applied via JavaScript */
     .global-search-bar {
       width: min(90%, 250px);
       padding: 0.5rem 1.5rem;
@@ -105,7 +105,7 @@
       font-size: 1.5rem;
       font-weight: bold;
       color: #00c3ff;
-      text-shadow: 0 0 10px rgba(0,195,255,0.5);
+      text-shadow: 0 0 10px rgba(0,123,255,0.5);
     }
     .folder-container {
       background: var(--transparent-bg);
@@ -140,7 +140,6 @@
       color: var(--text-light);
       border-bottom: 1px solid var(--border-color);
     }
-    /* Clickable items */
     .clickable {
       display: flex;
       align-items: center;
@@ -245,111 +244,408 @@
       margin: 1rem auto;
       border-radius: 10px;
     }
-    /* MEDIA QUERIES */
     @media(max-width:768px){
-      .folder-container {
-        border-radius: 15px;
-      }
-      .clickable {
-        padding: 1rem 1.5rem;
-      }
-      .hidden-section {
-        width: 98%;
-      }
-      /* Include #allSection along with other sections */
-      #androidSection .section,
-      #packSection .section,
-      #windowsSection .section,
-      #iosSection .section,
+      .folder-container { border-radius: 15px; }
+      .clickable { padding: 1rem 1.5rem; }
+      .hidden-section { width: 98%; }
+      #section1 .section,
+      #section2 .section,
+      #section3 .section,
+      #section4 .section,
+      #section5 .section,
+      #section6 .section,
+      #section7 .section,
+      #section8 .section,
+      #section9 .section,
+      #section10 .section,
+      #section11 .section,
+      #section12 .section,
+      #section13 .section,
+      #section14 .section,
+      #section15 .section,
       #allSection .section {
-        margin: 1rem auto;
-        padding: 0.5rem;
+         margin: 1rem auto;
+         padding: 0.5rem;
       }
-      #androidSection .section .preview-image,
-      #packSection .section .preview-image,
-      #windowsSection .section .preview-image,
-      #iosSection .section .preview-image,
+      #section1 .section .preview-image,
+      #section2 .section .preview-image,
+      #section3 .section .preview-image,
+      #section4 .section .preview-image,
+      #section5 .section .preview-image,
+      #section6 .section .preview-image,
+      #section7 .section .preview-image,
+      #section8 .section .preview-image,
+      #section9 .section .preview-image,
+      #section10 .section .preview-image,
+      #section11 .section .preview-image,
+      #section12 .section .preview-image,
+      #section13 .section .preview-image,
+      #section14 .section .preview-image,
+      #section15 .section .preview-image,
       #allSection .section .preview-image {
-        width: calc(100% + 1rem);
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
-        margin-bottom: -0.5rem;
+         width: calc(100% + 1rem);
+         margin-left: -0.5rem;
+         margin-right: -0.5rem;
+         margin-bottom: -0.5rem;
       }
-      #androidSection .search-bar,
-      #packSection .search-bar,
-      #windowsSection .search-bar,
-      #iosSection .search-bar,
-      #allSection .search-bar {
-        width: 60%;
-      }
+      #section1 .search-bar,
+      #section2 .search-bar,
+      #section3 .search-bar,
+      #section4 .search-bar,
+      #section5 .search-bar,
+      #section6 .search-bar,
+      #section7 .search-bar,
+      #section8 .search-bar,
+      #section9 .search-bar,
+      #section10 .search-bar,
+      #section11 .search-bar,
+      #section12 .search-bar,
+      #section13 .search-bar,
+      #section14 .search-bar,
+      #section15 .search-bar,
+      #allSection .search-bar { width: 60%; }
     }
     @media(min-width:769px){
-      #androidSection .section,
-      #packSection .section,
-      #windowsSection .section,
-      #iosSection .section,
-      #allSection .section {
-        padding: 0.5rem;
-      }
-      #androidSection .section .preview-image,
-      #packSection .section .preview-image,
-      #windowsSection .section .preview-image,
-      #iosSection .section .preview-image,
+      #section1 .section,
+      #section2 .section,
+      #section3 .section,
+      #section4 .section,
+      #section5 .section,
+      #section6 .section,
+      #section7 .section,
+      #section8 .section,
+      #section9 .section,
+      #section10 .section,
+      #section11 .section,
+      #section12 .section,
+      #section13 .section,
+      #section14 .section,
+      #section15 .section,
+      #allSection .section { padding: 0.5rem; }
+      #section1 .section .preview-image,
+      #section2 .section .preview-image,
+      #section3 .section .preview-image,
+      #section4 .section .preview-image,
+      #section5 .section .preview-image,
+      #section6 .section .preview-image,
+      #section7 .section .preview-image,
+      #section8 .section .preview-image,
+      #section9 .section .preview-image,
+      #section10 .section .preview-image,
+      #section11 .section .preview-image,
+      #section12 .section .preview-image,
+      #section13 .section .preview-image,
+      #section14 .section .preview-image,
+      #section15 .section .preview-image,
       #allSection .section .preview-image {
-        width: calc(100% + 1rem);
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
-        margin-bottom: -0.5rem;
+         width: calc(100% + 1rem);
+         margin-left: -0.5rem;
+         margin-right: -0.5rem;
+         margin-bottom: -0.5rem;
       }
-      #androidSection .search-bar,
-      #packSection .search-bar,
-      #windowsSection .search-bar,
-      #iosSection .search-bar,
-      #allSection .search-bar {
-        width: 60%;
-      }
+      #section1 .search-bar,
+      #section2 .search-bar,
+      #section3 .search-bar,
+      #section4 .search-bar,
+      #section5 .search-bar,
+      #section6 .search-bar,
+      #section7 .search-bar,
+      #section8 .search-bar,
+      #section9 .search-bar,
+      #section10 .search-bar,
+      #section11 .search-bar,
+      #section12 .search-bar,
+      #section13 .search-bar,
+      #section14 .search-bar,
+      #section15 .search-bar,
+      #allSection .search-bar { width: 60%; }
     }
     @media(prefers-reduced-motion:reduce){
-      * {
-        animation: none!important;
-        transition: none!important;
-      }
+      * { animation: none!important; transition: none!important; }
     }
   </style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-<script>
-    linkvertise(380136, {whitelist: [], blacklist: [""]});
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <script src="https://publisher.linkvertise.com/cdn/linkvertise.js">
   </script>
-</head>
-<body>
-<input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
-<!-- Clickable logo directing to the new link -->
-<a href="https://mcbeclient.github.io/dl/">
-<img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
-</a>
-<a class="lobby-link" href="https://yashofree.github.io/link/">
-    Home
+  <script>
+   linkvertise(380136, {whitelist: [], blacklist: [""]});
+  </script>
+ </head>
+ <body>
+  <input class="global-search-bar" onkeyup="globalSearch(this.value)" placeholder="🔍 Search..." type="text"/>
+  <!-- Clickable logo directing to the new link -->
+  <a href="https://mcbeclient.github.io/dl/">
+   <img alt="Logo" class="logo" src="https://i.pinimg.com/736x/d3/1d/07/d31d07313f89289e06d6cae9a38d998e.jpg" tabindex="0"/>
   </a>
-<div class="folder-container" id="mainSection">
-<div class="folder-header">
-<i class="fas fa-folder-open"></i>
-      Skins
-    </div>
-<!-- New All button -->
-<div class="clickable" onclick="showAllItems()">
-<i class="fas fa-globe"></i>
-      All
-    </div>
-<div class="clickable" onclick="showSection('packSection')"><i class="fas fa-cube"></i> Packs</div><div class="clickable" onclick="showSection('androidSection')"><i class="fas fa-user"></i> Personas</div><div class="clickable" onclick="showSection('windowsSection')"><i class="fab fa-android"></i> APKs</div><div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
-<i class="fas fa-shopping-cart"></i>
-      Marketplace
-    </div>
-</div>
-<!-- Hidden sections -->
-<!-- New All Clients hidden section -->
-<script>
-    let searchTimeout;
+  <a class="lobby-link" href="https://yashofree.github.io/link/">
+   Home
+  </a>
+  <div class="folder-container" id="mainSection">
+   <div class="folder-header">
+    <i class="fas fa-folder-open">
+    </i>
+    Skins
+   </div>
+   <!-- New clickable for All -->
+   <div class="clickable" onclick="showAllItems()">
+    <i class="fas fa-globe">
+    </i>
+    All
+   </div>
+   <div class="clickable" onclick="showSection('section1')">
+    <i class="fas fa-cube">
+    </i>
+    Packs
+   </div>
+   <div class="clickable" onclick="showSection('section2')">
+    <i class="fas fa-user">
+    </i>
+    Personas
+   </div>
+   <div class="clickable" onclick="showSection('section3')">
+    <i class="fab fa-android">
+    </i>
+    APKs
+   </div>
+   <!-- New clickable for Marketplace -->
+   <div class="clickable" onclick="window.location.href = 'https://craftydlc.github.io/v2/'">
+    <i class="fas fa-shopping-cart">
+    </i>
+    Marketplace
+   </div>
+  </div>
+  <!-- Hidden sections -->
+  <div class="hidden-section" id="section1">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-cube">
+    </i>
+    <br/>
+    Packs
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section1')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section2">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-user">
+    </i>
+    <br/>
+    Personas
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section2')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section3">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fab fa-android">
+    </i>
+    <br/>
+    APKs
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section3')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section4">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fab fa-apple">
+    </i>
+    <br/>
+    iOS
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section4')" placeholder="🔍 Search..." type="text"/>
+   <!-- iOS section currently has no items -->
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <!-- Sections 5 to 15 as empty placeholders -->
+  <div class="hidden-section" id="section5">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 5
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section5')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section6">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 6
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section6')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section7">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 7
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section7')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section8">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 8
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section8')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section9">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 9
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section9')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section10">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 10
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section10')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section11">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 11
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section11')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section12">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 12
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section12')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section13">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 13
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section13')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section14">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 14
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section14')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <div class="hidden-section" id="section15">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-folder">
+    </i>
+    <br/>
+    Section 15
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'section15')" placeholder="🔍 Search..." type="text"/>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <!-- New hidden section for All -->
+  <div class="hidden-section" id="allSection">
+   <header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
+    <i class="fas fa-globe">
+    </i>
+    <br/>
+    All
+   </header>
+   <input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
+   <div id="allItemsContainer">
+   </div>
+   <button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+  </div>
+  <script>
+   let searchTimeout;
     function globalSearch(query) {
       clearTimeout(searchTimeout);
       searchTimeout = setTimeout(() => {
@@ -447,21 +743,25 @@
       section.focus();
     }
     
-    // Function to show all items from all client categories in random order
+    function goBack() {
+      document.getElementById('mainSection').style.display = "block";
+      const sections = document.getElementsByClassName('hidden-section');
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+      }
+    }
+    
+    // Updated function to merge items from all sections (section1 to section15)
     function showAllItems() {
-      // Hide main section and all hidden sections
       document.getElementById('mainSection').style.display = "none";
       const sections = document.getElementsByClassName('hidden-section');
       for (let i = 0; i < sections.length; i++) {
         sections[i].style.display = "none";
       }
-      
-      // Clear the allItemsContainer
       const allContainer = document.getElementById('allItemsContainer');
       allContainer.innerHTML = "";
-      
-      // Collect items from the different sections
-      const ids = ['packSection', 'androidSection', 'windowsSection', 'iosSection'];
+      // Collect items from sections 1 through 15
+      const ids = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13', 'section14', 'section15'];
       let allItems = [];
       ids.forEach(function(id) {
         const container = document.getElementById(id);
@@ -472,87 +772,16 @@
           });
         }
       });
-      
-      // Randomize the items
       allItems.sort(() => Math.random() - 0.5);
-      
-      // Append the items to the allItemsContainer
       allItems.forEach(function(item) {
         allContainer.appendChild(item);
       });
-      
-      // Display the All Clients section
       const allSection = document.getElementById('allSection');
       allSection.style.display = "block";
       allSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       allSection.setAttribute('tabindex', '-1');
       allSection.focus();
     }
-    
-    function goBack() {
-      const sections = document.getElementsByClassName('hidden-section');
-      for (let i = 0; i < sections.length; i++) {
-        sections[i].style.display = "none";
-      }
-      document.getElementById('mainSection').style.display = "block";
-      document.getElementById('mainSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-    
-    function updateBackground() {
-      let bgImage = new Image();
-      let imageUrl = '';
-      if(window.innerWidth > 768) {
-        imageUrl = 'bg/pc.jpg';
-      } else {
-        imageUrl = 'bg/cp.jpg';
-      }
-      bgImage.onload = function() {
-        document.body.style.background = `url(${imageUrl}) no-repeat center center fixed`;
-        document.body.style.backgroundSize = "cover";
-      }
-      bgImage.onerror = function() {
-      }
-      bgImage.src = imageUrl;
-    }
-    
-    window.onload = function() {
-      const logo = document.querySelector('.logo');
-      if (logo) {
-        logo.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        logo.focus();
-      }
-      updateBackground();
-    }
-    window.addEventListener("resize", updateBackground);
   </script>
-<div class="hidden-section" id="packSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fas fa-cube"></i> Packs</header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'packSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button>
-</div><div class="hidden-section" id="androidSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fas fa-user"></i> Personas</header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'androidSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button></div><div class="hidden-section" id="windowsSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;"><i class="fab fa-android"></i> APKs</header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'windowsSection')" placeholder="🔍 Search..." type="text"/>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button>
-</div><div class="hidden-section" id="allSection">
-<header style="text-align: center; margin: 2rem 0; color: #00c3ff; text-shadow: 0 0 10px rgba(0,195,255,0.5); font-size: 2rem; animation: slideDown 0.5s ease-out;">
-<i class="fas fa-globe"></i>
-<br/>
-      All
-    </header>
-<input class="search-bar" onkeyup="sectionSearch(this.value, 'allSection')" placeholder="🔍 Search..." type="text"/>
-<!-- Container for merged items -->
-<div id="allItemsContainer"></div>
-<button class="back-button" onclick="goBack()" style="animation: slideUp 0.5s ease-out;">
-<i class="fas fa-arrow-left"></i> Back
-    </button>
-</div></body>
+ </body>
 </html>
